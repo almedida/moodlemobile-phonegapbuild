@@ -9229,15 +9229,15 @@ progress {
         box-shadow: none;
         color: #fff; }
   .button.button-positive {
-    border-color: #f91212;
-    background-color: #f91212;
+    border-color: #F44336;
+    background-color: #F44336;
     color: #fff; }
     .button.button-positive:hover {
       color: #fff;
       text-decoration: none; }
     .button.button-positive.active, .button.button-positive.activated {
-      border-color: #f91212;
-      background-color: rgba(249, 18, 18, 0.59); }
+      border-color: #0064d2;
+      background-color: #004c9f; }
     .button.button-positive.button-clear {
       border-color: transparent;
       background: none;
@@ -10513,10 +10513,10 @@ a.button {
  * App Branding
  */
 .mm-bglogo {
-  background-color: #f91212;
+  background-color: #ff5c00;
   /* Change this to add a bg image or change color */
-  background: -webkit-radial-gradient(#ff7600, #f91212);
-  background: radial-gradient(#ff7600, #f91212);
+  background: -webkit-radial-gradient(#ff5c00, #ff5c00);
+  background: radial-gradient(#ff5c00, #ff5c00);
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -10566,14 +10566,14 @@ a.button {
 
 .bar-content {
   border-color: transparent;
-  background-color: #f91212;
+  background-color: #F44336;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #ffffff; }
   .bar-content .title {
     color: #ffffff; }
   .bar-content .button {
     border-color: transparent;
-    background-color: #f98012;
+    background-color: #FF5722;
     color: #ffffff; }
     .bar-content .button:hover {
       color: #ffffff;
@@ -13089,7 +13089,7 @@ li.mm-question-answer-incorrect,
 
 .bar-side-menu {
   border-color: transparent;
-  background-color: #f91212;
+  background-color: #f98012;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #ffffff;
   height: 80px !important; }
