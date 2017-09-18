@@ -1,23 +1,67 @@
-<ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}">
+<!-- <ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}"> -->
+<ion-view view-title="{{ 'ABS Mobile' | translate }}">
   <ion-nav-buttons side="secondary">
-      <button class="button button-icon ion-help-circled" ng-click="showHelp()" aria-label="{{ 'mm.core.help' | translate }}"></button>
+     <!--  <button class="button button-icon ion-help-circled" ng-click="showHelp()" aria-label="{{ 'mm.core.help' | translate }}"></button> -->
+      <button class="button" ng-click="connect('http://abs.dexlearn.com/')" >{{ 'LOGIN' | translate }}</button>
   </ion-nav-buttons>
-  <ion-content padding="true" id="mm-login-site" mm-state-class>
-      <div class="card">
+    <ion-content mm-state-class padding="true" class="mm-center-view">
+      
+      <!-- <div class="card">
         <div class="item item-text-wrap">{{ 'mm.login.newsitedescription' | translate }}</div>
-      </div>
-      <div class="list list-inset">
-        <form>
+      </div> -->
+      <!-- <div class="list list-inset"> -->
+        <!-- <form>
           <ion-input class="item item-input item-stacked-label">
             <ion-label>{{ 'mm.login.siteaddress' | translate }}</ion-label>
             <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation mm-auto-focus >
           </ion-input>
           <div class="item item-input padding">
-              <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button>
+              <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="!siteurl">{{ 'mm.login.connect' | translate }}</button> -->
+
               <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" > -->
-          </div>
-        </form>
-      </div>
-    </form>
-  </ion-content>
+         <!--  </div>
+        </form> -->
+        <!-- </div> -->
+        
+        <!-- contents for site homepage here -->
+          <!-- <div ng-include src="'core/components/login/templates/courses.html'"></div>    -->
+
+        <!-- and end here -->
+
+      <!-- tabs contents here -->
+
+    <ion-tabs class="tabs-stable tabs-icon-top">
+      <ion-tab title="Home" icon="ion-android-home">
+      
+        <ion-view view-title="ABS Mobile">
+          <ion-content padding="true" scroll="false" style="background-color: #ffffff; text-align: center; ">
+            <div ng-include src="'core/components/login/templates/home-content.html'"></div> 
+
+        </ion-content>
+      </ion-view>
+
+    </ion-tab>
+
+     <ion-tab title="Courses" icon="ion-monitor">
+       <ion-view view-title="Available Courses">
+          <ion-content>
+            <div ng-include src="'core/components/login/templates/courses.html'"></div> 
+          </ion-content>
+        </ion-view>
+    </ion-tab>
+
+   <!--  <ion-tab title="Visit Web" icon="ion-android-globe" >
+      
+    </ion-tab> -->
+
+    <ion-tab title="About" icon="ion-android-contacts">
+      <ion-view view-title="About">
+        <ion-content style="background-color: #ffffff;">
+          
+          <div ng-include src="'core/components/login/templates/about.html'"></div>
+      </ion-content>
+         
+    </ion-tab>
+  </ion-tabs>
+</ion-content>
 </ion-view>
